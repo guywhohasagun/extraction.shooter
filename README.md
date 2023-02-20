@@ -1,5 +1,5 @@
 # extraction.shooter
-Extraction shooter project
+shooter project
 
 
 
