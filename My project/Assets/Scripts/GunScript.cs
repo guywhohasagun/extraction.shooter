@@ -22,11 +22,19 @@ public class GunScript : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, gunRange))
         {
-            Debug.Log(hit.transform.position);
+            Debug.Log(hit.transform.position + " " + hit.transform.name);
+
             Target target = hit.transform.GetComponent<Target>();
+            BossTarget bossTarget = hit.transform.GetComponent<BossTarget>();
+
             if (target != null)
             {
                 target.TakeDamage(gunDamage);
+            }
+
+            if (bossTarget != null)
+            {
+                bossTarget.TakeDamage(gunDamage);
             }
         }
         

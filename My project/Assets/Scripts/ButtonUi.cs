@@ -5,10 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class ButtonUi : MonoBehaviour
 {
-    [SerializeField] private string newGameLevel1 = "SampleScene";
+    [SerializeField] private string TestScene = "SampleScene";
+    [SerializeField] private string Level1 = "Level1";
 
-    public void NewGameButton()
+    public void LoadTestScene()
     {
-        SceneManager.LoadScene(newGameLevel1);
+        SceneManager.LoadScene(TestScene);
+    }
+    public void LoadLevel1()
+    {
+        SceneManager.LoadScene(Level1);
     }
 }
