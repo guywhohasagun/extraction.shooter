@@ -7,7 +7,7 @@ public class RandomMovement : MonoBehaviour
     public Vector3 maxPosition;
     
     // how long inbetween movements
-    public float delayTime = 3.0f;
+    public float delayTime = 2.0f;
 
     // how fast it moves
     public float moveSpeed = 1.0f;
