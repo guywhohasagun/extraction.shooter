@@ -1,3 +1,4 @@
+// code for the enemies random movement 
 using UnityEngine;
 
 public class RandomMovement : MonoBehaviour

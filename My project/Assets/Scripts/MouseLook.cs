@@ -1,3 +1,4 @@
+//code for the first person camera 
 using UnityEngine;
 
 public class MouseLook : MonoBehaviour
