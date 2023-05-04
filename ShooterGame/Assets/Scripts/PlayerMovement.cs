@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController controller;
+    public CharacterController controller; //controls player controls i believe using this also makes it possible to use a controller 
     public float gravity = -9.81f; //strength of gravity 
     public float jumpHeight = 3f; //jump height
 

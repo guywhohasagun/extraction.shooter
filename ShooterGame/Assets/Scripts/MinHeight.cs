@@ -5,18 +5,13 @@ using UnityEngine;
 
 public class MinHeight : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
         if (transform.position.y < -10)
         {
-            transform.position = new Vector3(0, 3, 64);
+            transform.position = new Vector3(0, 3, 64); // teleports enemy 
         }
     }
 }

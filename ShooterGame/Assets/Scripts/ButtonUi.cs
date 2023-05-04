@@ -11,10 +11,10 @@ public class ButtonUi : MonoBehaviour
 
     public void LoadTestScene()
     {
-        SceneManager.LoadScene(TestScene);
+        SceneManager.LoadScene(TestScene); //loads the test scene
     }
     public void LoadLevel1()
     {
-        SceneManager.LoadScene(Level1);
+        SceneManager.LoadScene(Level1); //loads the test scene
     }
 }

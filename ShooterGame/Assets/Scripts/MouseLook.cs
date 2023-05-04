@@ -5,8 +5,8 @@ public class MouseLook : MonoBehaviour
 {
     public float mouseSensitviy = 1000f; // mouse sensivity //to do add ui to change this in game
 
-    public Transform playerBody;
-    public Transform playerHead;
+    public Transform playerBody; //players body
+    public Transform playerHead; //players head
     float xRotation = 0f; // stores the x rotation of the player
 
     void Start()
@@ -17,8 +17,8 @@ public class MouseLook : MonoBehaviour
     void Update()
     {
         // gets the mouse axis
-        float mouseX = mouseSensitviy * Input.GetAxis("Mouse X") * Time.deltaTime;
-        float mouseY = mouseSensitviy * Input.GetAxis("Mouse Y") * Time.deltaTime; 
+        float mouseX = mouseSensitviy * Input.GetAxis("Mouse X") * Time.deltaTime;  //mouse moving in the x axis
+        float mouseY = mouseSensitviy * Input.GetAxis("Mouse Y") * Time.deltaTime;  //mouse moving in the y axis
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f); // makes it so you can only look up and down 90 degrees
